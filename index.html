@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Web Studio — Beyond Ordinary Digital Experiences</title>
+    <meta name="description" content="Horizon Web Studio is an independent digital agency founded by Hussain, crafting modern websites, responsive design, and AI-assisted web experiences.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Custom Spacecraft Cursor -->
+    <div class="spacecraft-cursor" id="spacecraftCursor">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 22L12 18L22 22L12 2Z" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+        <div class="cursor-trail"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header id="header" class="header">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <!-- Black Hole Symbol Logo -->
+                <div class="logo-black-hole">
+                    <div class="bh-ring"></div>
+                    <div class="bh-core"></div>
+                </div>
+                <div class="logo-text-group">
+                    <span class="logo-title">HORIZON</span>
+                    <span class="logo-subtitle">WEB STUDIO</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#approach" class="nav-link">Our Approach</a>
+                <a href="#contact" class="nav-link nav-cta-mobile">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-secondary btn-sm">Start a Project</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section — Cinematic Black Hole -->
+        <section class="hero" id="hero">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-cinematic-bg" style="background-image: url('https://npr.brightspotcdn.com/dims4/default/b2dff4f/2147483647/strip/true/crop/1920x1097+0+0/resize/880x503!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff9%2F12%2F8a44e4464fc1aeda698e13068f2e%2Fsupermassive-blackholes-credit-adis-resic.jpg');"></div>
+            <div class="stars-container" id="starsContainer"></div>
+
+            <div class="container hero-container">
+                <div class="hero-badge">
+                    <span class="badge-line"></span>
+                    <span>INDEPENDENT DIGITAL STUDIO</span>
+                    <span class="badge-line"></span>
+                </div>
+                <h1 class="hero-title">WE BUILD DIGITAL EXPERIENCES BEYOND ORDINARY.</h1>
+                <p class="hero-subtitle">Crafting modern websites and digital experiences that help ambitious businesses stand out, connect and grow.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>EXPLORE OUR WORK</span>
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>START A PROJECT</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">01 // THE STUDIO</span>
+                    <h2 class="section-title">BEYOND THE ORDINARY.</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p class="about-lead">Horizon Web Studio is an independent digital studio founded by Hussain, dedicated to crafting refined web architecture and immersive digital spaces.</p>
+                        <p>We believe the web should be an experience, not just a utility. By merging precise technical execution with cinematic minimalism, we build digital assets that command attention and drive real business growth.</p>
+
+                        <div class="about-pillars">
+                            <div class="pillar-item">
+                                <span class="pillar-num">01</span>
+                                <div>
+                                    <h4>Modern Web Development</h4>
+                                    <p>Clean, semantic, high-performance code built for scale and reliability.</p>
+                                </div>
+                            </div>
+                            <div class="pillar-item">
+                                <span class="pillar-num">02</span>
+                                <div>
+                                    <h4>Thoughtful UI/UX</h4>
+                                    <p>Immersive interfaces designed around user intent and visual elegance.</p>
+                                </div>
+                            </div>
+                            <div class="pillar-item">
+                                <span class="pillar-num">03</span>
+                                <div>
+                                    <h4>AI-Assisted Workflow</h4>
+                                    <p>Leveraging cutting-edge AI tools like Claude to accelerate building and optimize code.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats-card">
+                        <div class="studio-badge-box">
+                            <div class="studio-bh-mini">
+                                <div class="bh-ring-mini"></div>
+                                <div class="bh-core-mini"></div>
+                            </div>
+                            <h3>HORIZON WEB STUDIO</h3>
+                            <p>Founded by Hussain</p>
+                        </div>
+                        <div class="studio-metrics">
+                            <div class="metric">
+                                <span class="m-val">100%</span>
+                                <span class="m-lbl">Tailored Code</span>
+                            </div>
+                            <div class="metric">
+                                <span class="m-val">02+</span>
+                                <span class="m-lbl">Client Works</span>
+                            </div>
+                            <div class="metric">
+                                <span class="m-val">24/7</span>
+                                <span class="m-lbl">Precision Focus</span>
+                            </div>
+                        </div>
+                        <div class="studio-status">
+                            <span class="status-dot"></span>
+                            <span>Accepting New Projects for 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02 // CAPABILITIES</span>
+                    <h2 class="section-title">PREMIUM SERVICES.</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <span class="service-index">01</span>
+                        <h3>Business Website Development</h3>
+                        <p>Comprehensive, multi-page web architecture designed to establish authority, present services impeccably, and convert visitors into long-term clients.</p>
+                        <div class="service-footer">
+                            <span>Strategic & Scalable</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <span class="service-index">02</span>
+                        <h3>Landing Page Design</h3>
+                        <p>High-impact, conversion-focused single page experiences engineered to capture attention instantly during product launches or campaigns.</p>
+                        <div class="service-footer">
+                            <span>Conversion Focused</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <span class="service-index">03</span>
+                        <h3>Responsive Web Experiences</h3>
+                        <p>Meticulously crafted layouts ensuring seamless navigation, pristine typography, and flawless responsiveness across all devices and screen sizes.</p>
+                        <div class="service-footer">
+                            <span>Universal Compatibility</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <span class="service-index">04</span>
+                        <h3>Website Maintenance & Improvements</h3>
+                        <p>Continuous refinement, performance optimization, structural updates, and security enhancements to keep your digital presence razor-sharp.</p>
+                        <div class="service-footer">
+                            <span>Ongoing Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Projects Section -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03 // PORTFOLIO</span>
+                    <h2 class="section-title">SELECTED WORK.</h2>
+                </div>
+                <div class="projects-list">
+                    <!-- Project 01 -->
+                    <div class="project-item">
+                        <div class="project-info-col">
+                            <span class="project-num">01 / 02</span>
+                            <h3>Classic Garden</h3>
+                            <p class="project-desc">A modern garden and landscaping business website combining lush aesthetic imagery with clean structural hierarchy and seamless user navigation.</p>
+                            <div class="project-tags-list">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="project-action-btns">
+                                <a href="https://hussainmughal27.github.io/Classic-Garden/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                                    <span>Live Website</span>
+                                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
+                                <a href="https://github.com/Hussainmughal27/Classic-Garden" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                                    <span>GitHub Repository</span>
+                                    <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-preview-col">
+                            <div class="project-preview-frame garden-preview">
+                                <div class="preview-header-bar">
+                                    <span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span>
+                                    <span class="p-url">classic-garden.web</span>
+                                </div>
+                                <div class="preview-hero-content">
+                                    <span class="preview-badge">Landscaping Studio</span>
+                                    <h4>Classic Garden</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 02 -->
+                    <div class="project-item">
+                        <div class="project-info-col">
+                            <span class="project-num">02 / 02</span>
+                            <h3>Ahmed Homeopathic Pharmacy</h3>
+                            <p class="project-desc">A professional homeopathic pharmacy website designed with clinical clarity, reassuring typography, and intuitive access to medical care and remedies.</p>
+                            <div class="project-tags-list">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Accessible</span>
+                            </div>
+                            <div class="project-action-btns">
+                                <a href="https://hussainmughal27.github.io/ahmed-homeopathic-pharmacy/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                                    <span>Live Website</span>
+                                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </a>
+                                <a href="https://github.com/Hussainmughal27/ahmed-homeopathic-pharmacy" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                                    <span>GitHub Repository</span>
+                                    <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-preview-col">
+                            <div class="project-preview-frame pharma-preview">
+                                <div class="preview-header-bar">
+                                    <span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span>
+                                    <span class="p-url">ahmed-pharmacy.web</span>
+                                </div>
+                                <div class="preview-hero-content">
+                                    <span class="preview-badge">Healthcare & Pharmacy</span>
+                                    <h4>Ahmed Homeopathic Pharmacy</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Approach Section -->
+        <section class="section approach" id="approach">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">04 // METHODOLOGY</span>
+                    <h2 class="section-title">OUR APPROACH.</h2>
+                </div>
+                <div class="approach-grid">
+                    <div class="approach-step">
+                        <span class="step-num">01</span>
+                        <h3>DISCOVER</h3>
+                        <p>Understand the business and its goals.</p>
+                    </div>
+                    <div class="approach-step">
+                        <span class="step-num">02</span>
+                        <h3>DESIGN</h3>
+                        <p>Plan the layout and user experience.</p>
+                    </div>
+                    <div class="approach-step">
+                        <span class="step-num">03</span>
+                        <h3>DEVELOP</h3>
+                        <p>Build responsive, functional websites.</p>
+                    </div>
+                    <div class="approach-step">
+                        <span class="step-num">04</span>
+                        <h3>DELIVER</h3>
+                        <p>Test, refine and publish the website.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">05 // INQUIRY</span>
+                    <h2 class="section-title">LET'S CREATE SOMETHING EXTRAORDINARY.</h2>
+                    <p class="section-desc">Have an idea? Let's turn it into a digital experience.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <h3>Direct Channels</h3>
+                        <p>Reach out directly via email, WhatsApp, or connect on GitHub. We respond promptly to all new inquiries.</p>
+
+                        <div class="contact-links-stack">
+                            <a href="mailto:hussainmugal10@gmail.com" class="contact-link-row">
+                                <div class="c-icon">
+                                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <div>
+                                    <span class="clabel">Email</span>
+                                    <span class="cval">hussainmugal10@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/92341104227" target="_blank" rel="noopener" class="contact-link-row">
+                                <div class="c-icon">
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                </div>
+                                <div>
+                                    <span class="clabel">WhatsApp</span>
+                                    <span class="cval">03411044227</span>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/Hussainmughal27" target="_blank" rel="noopener" class="contact-link-row">
+                                <div class="c-icon">
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                </div>
+                                <div>
+                                    <span class="clabel">GitHub</span>
+                                    <span class="cval">github.com/Hussainmughal27</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-card">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="projectType">Project Type</label>
+                                <select id="projectType" name="projectType">
+                                    <option value="business">Business Website Development</option>
+                                    <option value="landing">Landing Page Design</option>
+                                    <option value="responsive">Responsive Web Experience</option>
+                                    <option value="maintenance">Website Maintenance & Improvements</option>
+                                    <option value="other">Other Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>SEND MESSAGE</span>
+                            </button>
+                            <div id="formFeedback" class="form-feedback hidden">
+                                <p>Thank you! You can also email me directly at <a href="mailto:hussainmugal10@gmail.com">hussainmugal10@gmail.com</a> or message on WhatsApp at <a href="https://wa.me/92341104227" target="_blank">03411044227</a>.</p>
+                                <a id="mailtoString" href="mailto:hussainmugal10@gmail.com" class="btn btn-secondary btn-sm" style="margin-top: 10px; display: inline-block;">Open Email Client</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand-col">
+                <div class="brand-logo footer-logo">
+                    <div class="logo-black-hole">
+                        <div class="bh-ring"></div>
+                        <div class="bh-core"></div>
+                    </div>
+                    <div class="logo-text-group">
+                        <span class="logo-title">HORIZON</span>
+                        <span class="logo-subtitle">WEB STUDIO</span>
+                    </div>
+                </div>
+                <p>Beyond Ordinary Digital Experiences.</p>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#approach">Our Approach</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-connect-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:hussainmugal10@gmail.com">hussainmugal10@gmail.com</a></li>
+                    <li><a href="https://wa.me/92341104227" target="_blank" rel="noopener">WhatsApp: 03411044227</a></li>
+                    <li><a href="https://github.com/Hussainmughal27" target="_blank" rel="noopener">GitHub: Hussainmughal27</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Horizon Web Studio. Founded by Hussain. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
