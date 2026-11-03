@@ -1238,4 +1238,16 @@ img { max-width: 100%; height: auto; }
     .project-item {
         padding: 1.75rem;
     }
+
+    /* Mobile-Specific Hero Black Hole Adjustments */
+    .hero-cinematic-bg {
+        filter: grayscale(100%) contrast(150%) brightness(55%);
+        background-position: center top 20% !important;
+        transform: scale(1.4);
+    }
+
+    .hero-bg-overlay {
+        background: radial-gradient(circle at center, rgba(5,5,5,0.2) 0%, rgba(5,5,5,0.98) 75%);
+    }
 }
+
