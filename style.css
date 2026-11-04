@@ -1238,16 +1238,95 @@ img { max-width: 100%; height: auto; }
     .project-item {
         padding: 1.75rem;
     }
+}
+/* MOBILE HERO — PORTRAIT OPTIMIZATION */
+@media (max-width: 768px) {
 
-    /* Mobile-Specific Hero Black Hole Adjustments */
+    .hero {
+        min-height: 100svh;
+        padding-top: var(--header-height);
+        background: #050505;
+    }
+
+  .hero-cinematic-bg {
+    background-size: cover;
+    background-position: 65% center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%) contrast(140%) brightness(45%);
+    transform: scale(1.08);
+    animation: none;
+}
+    .hero-bg-overlay {
+        background: linear-gradient(
+            to bottom,
+            rgba(5,5,5,0.12) 0%,
+            rgba(5,5,5,0.25) 45%,
+            rgba(5,5,5,0.85) 100%
+        );
+    }
+
+ 
+/* MOBILE HERO — FINAL CLEAN VERSION */
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 100svh;
+        box-sizing: border-box;
+        padding-top: var(--header-height);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
     .hero-cinematic-bg {
-        filter: grayscale(100%) contrast(150%) brightness(55%);
-        background-position: center top 20% !important;
-        transform: scale(1.4);
+        background-size: cover;
+        background-position: 80% center;
+        background-repeat: no-repeat;
+        filter: grayscale(100%) contrast(140%) brightness(50%);
+        transform: scale(1.08);
+        animation: none;
     }
 
     .hero-bg-overlay {
-        background: radial-gradient(circle at center, rgba(5,5,5,0.2) 0%, rgba(5,5,5,0.98) 75%);
+        background: linear-gradient(
+            to bottom,
+            rgba(5,5,5,0.15) 0%,
+            rgba(5,5,5,0.25) 55%,
+            rgba(5,5,5,0.65) 100%
+        );
+    }
+
+    .hero-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem 1rem 3rem;
+        margin: 0 auto;
+    }
+
+    .hero-badge {
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2.1rem, 8vw, 2.8rem);
+        line-height: 1.08;
+        letter-spacing: -0.03em;
+        margin-bottom: 1.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+        gap: 1rem;
+    }
+
+    .scroll-indicator {
+        bottom: 0.8rem;
     }
 }
-
+}
