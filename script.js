@@ -4,6 +4,45 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // 0. Theme & Accessibility Settings Toggles
+    const themeToggle = document.getElementById('themeToggle');
+    const motionToggle = document.getElementById('motionToggle');
+
+    // Load saved Theme preference (default: dark)
+    const savedTheme = localStorage.getItem('horizon_theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+
+    // Load saved Reduce Motion preference
+    const savedMotion = localStorage.getItem('horizon_reduce_motion');
+    const systemPrefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isMotionReduced = savedMotion !== null ? savedMotion === 'true' : systemPrefersReducedMotion;
+
+    if (isMotionReduced) {
+        document.body.setAttribute('data-reduce-motion', 'true');
+        if (motionToggle) motionToggle.classList.add('active');
+    } else {
+        document.body.setAttribute('data-reduce-motion', 'false');
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('horizon_theme', newTheme);
+        });
+    }
+
+    if (motionToggle) {
+        motionToggle.addEventListener('click', () => {
+            const currentMotion = document.body.getAttribute('data-reduce-motion');
+            const newMotion = currentMotion === 'true' ? 'false' : 'true';
+            document.body.setAttribute('data-reduce-motion', newMotion);
+            localStorage.setItem('horizon_reduce_motion', newMotion);
+            motionToggle.classList.toggle('active', newMotion === 'true');
+        });
+    }
+
     // 1. Starfield Generator for Cinematic Space Hero
     const starsContainer = document.getElementById('starsContainer');
     if (starsContainer) {
