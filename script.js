@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load saved Theme preference (default: dark)
     const savedTheme = localStorage.getItem('horizon_theme') || 'dark';
     document.body.setAttribute('data-theme', savedTheme);
+    document.documentElement.setAttribute('data-theme', savedTheme);
 
     // Load saved Reduce Motion preference
     const savedMotion = localStorage.getItem('horizon_reduce_motion');
@@ -26,9 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (themeToggle) {
         themeToggle.addEventListener('click', () => {
-            const currentTheme = document.body.getAttribute('data-theme');
+            const currentTheme = document.body.getAttribute('data-theme') || 'dark';
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
             document.body.setAttribute('data-theme', newTheme);
+            document.documentElement.setAttribute('data-theme', newTheme);
             localStorage.setItem('horizon_theme', newTheme);
         });
     }
@@ -83,11 +85,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         requestAnimationFrame(renderCursor);
 
-        // Hover effects on interactive elements
-        const interactiveElements = document.querySelectorAll('a, button, input, select, textarea');
-        interactiveElements.forEach(el => {
-            el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
-            el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+        // Hover effects on interactive elements using event delegation
+        document.addEventListener('mouseover', (e) => {
+            if (e.target.closest('a, button, input, select, textarea, .btn, .service-card, .project-item, .contact-link-row, .icon-toggle-btn')) {
+                cursor.classList.add('hovering');
+            }
+        });
+        document.addEventListener('mouseout', (e) => {
+            if (e.target.closest('a, button, input, select, textarea, .btn, .service-card, .project-item, .contact-link-row, .icon-toggle-btn')) {
+                cursor.classList.remove('hovering');
+            }
         });
     }
 

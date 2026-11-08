@@ -9,6 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Preload & Early Theme Script to prevent flash -->
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem('horizon_theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +24,7 @@
     <!-- Custom Spacecraft Cursor -->
     <div class="spacecraft-cursor" id="spacecraftCursor">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2L2 22L12 18L22 22L12 2Z" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M12 2L2 22L12 18L22 22L12 2Z" fill="var(--cursor-fill)" stroke="var(--cursor-stroke)" stroke-width="1.5" stroke-linejoin="round"/>
         </svg>
         <div class="cursor-trail"></div>
     </div>
@@ -453,7 +460,12 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
+       <!-- JavaScript -->
     <script src="script.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.scrollTo(0, 0);
+    });
+    </script>
 </body>
 </html>

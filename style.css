@@ -1,48 +1,203 @@
 /* =========================================
-   HORIZON WEB STUDIO — CINEMATIC MONOCHROME SPACE THEME
+   HORIZON WEB STUDIO — LUXURY MONOCHROME SYSTEM
    ========================================= */
+
+:root,
+body[data-theme="dark"],
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg-deep: #050505;
+    --bg-charcoal: #0b0b0e;
+    --bg-graphite: #121216;
+    --bg-card: #0d0d11;
+    --bg-card-hover: #15151a;
+    --bg-header: rgba(5, 5, 5, 0.4);
+    --bg-header-scrolled: rgba(10, 10, 14, 0.85);
+
+    --border-color: rgba(255, 255, 255, 0.1);
+    --border-hover: rgba(255, 255, 255, 0.28);
+    --border-subtle: rgba(255, 255, 255, 0.05);
+
+    --text-main: #ffffff;
+    --text-muted: #a1a1aa;
+    --text-dim: #71717a;
+    --heading-color: #ffffff;
+
+    --btn-primary-bg: #ffffff;
+    --btn-primary-text: #050505;
+    --btn-primary-hover-bg: #e4e4e7;
+    --btn-primary-hover-text: #050505;
+
+    --btn-secondary-bg: rgba(255, 255, 255, 0.05);
+    --btn-secondary-text: #ffffff;
+    --btn-secondary-border: rgba(255, 255, 255, 0.2);
+    --btn-secondary-hover-bg: rgba(255, 255, 255, 0.15);
+    --btn-secondary-hover-border: rgba(255, 255, 255, 0.4);
+
+    --hero-overlay: radial-gradient(circle at center, rgba(5,5,5,0.4) 0%, rgba(5,5,5,0.95) 85%);
+    --hero-mobile-overlay: linear-gradient(to bottom, rgba(5,5,5,0.2) 0%, rgba(5,5,5,0.5) 55%, rgba(5,5,5,0.92) 100%);
+    --hero-filter: grayscale(100%) contrast(140%) brightness(40%);
+
+    --cursor-fill: #ffffff;
+    --cursor-stroke: #e0e0e0;
+    --cursor-trail-bg: rgba(255, 255, 255, 0.8);
+    --cursor-shadow: rgba(255, 255, 255, 0.6);
+
+    --logo-core-bg: #000000;
+    --logo-core-shadow: 0 0 10px rgba(255, 255, 255, 0.9), inset 0 0 3px rgba(255, 255, 255, 0.9);
+    --logo-ring-border: rgba(255, 255, 255, 0.6);
+    --logo-ring-top: #ffffff;
+    --logo-title: #ffffff;
+    --logo-subtitle: #71717a;
+
+    --input-bg: #08080a;
+    --input-text: #ffffff;
+    --input-border: rgba(255, 255, 255, 0.12);
+    --input-focus-border: rgba(255, 255, 255, 0.5);
+
+    --nav-link-color: rgba(255, 255, 255, 0.75);
+    --nav-link-hover: #ffffff;
+    --nav-link-scrolled: rgba(255, 255, 255, 0.8);
+
+    --footer-bg: #020204;
+
+    --shadow-card: 0 20px 50px rgba(0, 0, 0, 0.6);
+    --shadow-card-hover: 0 30px 60px rgba(0, 0, 0, 0.8);
+
+    --font-heading: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Light Theme — Luxury Platinum Aesthetic */
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+        color-scheme: light;
+        --bg-deep: #f8f9fb;
+        --bg-charcoal: #ffffff;
+        --bg-graphite: #f0f3f7;
+        --bg-card: #ffffff;
+        --bg-card-hover: #f1f4f8;
+        --bg-header: rgba(248, 249, 251, 0.6);
+        --bg-header-scrolled: rgba(248, 249, 251, 0.88);
+
+        --border-color: rgba(15, 23, 42, 0.08);
+        --border-hover: rgba(15, 23, 42, 0.22);
+        --border-subtle: rgba(15, 23, 42, 0.04);
+
+        --text-main: #0f172a;
+        --text-muted: #475569;
+        --text-dim: #64748b;
+        --heading-color: #0f172a;
+
+        --btn-primary-bg: #0f172a;
+        --btn-primary-text: #ffffff;
+        --btn-primary-hover-bg: #1e293b;
+        --btn-primary-hover-text: #ffffff;
+
+        --btn-secondary-bg: rgba(15, 23, 42, 0.04);
+        --btn-secondary-text: #0f172a;
+        --btn-secondary-border: rgba(15, 23, 42, 0.18);
+        --btn-secondary-hover-bg: rgba(15, 23, 42, 0.1);
+        --btn-secondary-hover-border: rgba(15, 23, 42, 0.35);
+
+        --hero-overlay: radial-gradient(circle at center, rgba(248,249,251,0.5) 0%, rgba(248,249,251,0.92) 85%);
+        --hero-mobile-overlay: linear-gradient(to bottom, rgba(248,249,251,0.3) 0%, rgba(248,249,251,0.65) 55%, rgba(248,249,251,0.95) 100%);
+        --hero-filter: grayscale(80%) contrast(105%) brightness(95%);
+
+        --cursor-fill: #0f172a;
+        --cursor-stroke: #334155;
+        --cursor-trail-bg: rgba(15, 23, 42, 0.75);
+        --cursor-shadow: rgba(15, 23, 42, 0.3);
+
+        --logo-core-bg: #0f172a;
+        --logo-core-shadow: 0 0 10px rgba(15, 23, 42, 0.4), inset 0 0 3px rgba(255, 255, 255, 0.8);
+        --logo-ring-border: rgba(15, 23, 42, 0.3);
+        --logo-ring-top: #0f172a;
+        --logo-title: #0f172a;
+        --logo-subtitle: #64748b;
+
+        --input-bg: #ffffff;
+        --input-text: #0f172a;
+        --input-border: rgba(15, 23, 42, 0.12);
+        --input-focus-border: rgba(15, 23, 42, 0.4);
+
+        --nav-link-color: #475569;
+        --nav-link-hover: #0f172a;
+        --nav-link-scrolled: #1e293b;
+
+        --footer-bg: #eff2f6;
+
+        --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.05);
+        --shadow-card-hover: 0 20px 40px rgba(15, 23, 42, 0.1);
+    }
+}
+
+:root[data-theme="light"],
+body[data-theme="light"] {
+    color-scheme: light;
+    --bg-deep: #f8f9fb;
+    --bg-charcoal: #ffffff;
+    --bg-graphite: #f0f3f7;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f1f4f8;
+    --bg-header: rgba(248, 249, 251, 0.6);
+    --bg-header-scrolled: rgba(248, 249, 251, 0.88);
+
+    --border-color: rgba(15, 23, 42, 0.08);
+    --border-hover: rgba(15, 23, 42, 0.22);
+    --border-subtle: rgba(15, 23, 42, 0.04);
+
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --text-dim: #64748b;
+    --heading-color: #0f172a;
+
+    --btn-primary-bg: #0f172a;
+    --btn-primary-text: #ffffff;
+    --btn-primary-hover-bg: #1e293b;
+    --btn-primary-hover-text: #ffffff;
+
+    --btn-secondary-bg: rgba(15, 23, 42, 0.04);
+    --btn-secondary-text: #0f172a;
+    --btn-secondary-border: rgba(15, 23, 42, 0.18);
+    --btn-secondary-hover-bg: rgba(15, 23, 42, 0.1);
+    --btn-secondary-hover-border: rgba(15, 23, 42, 0.35);
+
+    --hero-overlay: radial-gradient(circle at center, rgba(248,249,251,0.5) 0%, rgba(248,249,251,0.92) 85%);
+    --hero-mobile-overlay: linear-gradient(to bottom, rgba(248,249,251,0.3) 0%, rgba(248,249,251,0.65) 55%, rgba(248,249,251,0.95) 100%);
+    --hero-filter: grayscale(80%) contrast(105%) brightness(95%);
+
+    --cursor-fill: #0f172a;
+    --cursor-stroke: #334155;
+    --cursor-trail-bg: rgba(15, 23, 42, 0.75);
+    --cursor-shadow: rgba(15, 23, 42, 0.3);
+
+    --logo-core-bg: #0f172a;
+    --logo-core-shadow: 0 0 10px rgba(15, 23, 42, 0.4), inset 0 0 3px rgba(255, 255, 255, 0.8);
+    --logo-ring-border: rgba(15, 23, 42, 0.3);
+    --logo-ring-top: #0f172a;
+    --logo-title: #0f172a;
+    --logo-subtitle: #64748b;
+
+    --input-bg: #ffffff;
+    --input-text: #0f172a;
+    --input-border: rgba(15, 23, 42, 0.12);
+    --input-focus-border: rgba(15, 23, 42, 0.4);
+
+    --nav-link-color: #475569;
+    --nav-link-hover: #0f172a;
+    --nav-link-scrolled: #1e293b;
+
+    --footer-bg: #eff2f6;
+
+    --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.05);
+    --shadow-card-hover: 0 20px 40px rgba(15, 23, 42, 0.1);
+}
 
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-:root {
-    --bg-deep: #050505;
-    --bg-charcoal: #0d0d0d;
-    --bg-graphite: #141414;
-    --bg-card: #0f0f11;
-    --border-color: rgba(255, 255, 255, 0.08);
-    --border-hover: rgba(255, 255, 255, 0.25);
-
-    --text-main: #ffffff;
-    --text-muted: #a1a1aa;
-    --text-dim: #71717a;
-
-    --accent-glow: rgba(255, 255, 255, 0.15);
-
-    --font-heading: 'Space Grotesk', -apple-system, sans-serif;
-    --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
-
-    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    --container-width: 1240px;
-    --header-height: 90px;
-}
-
-body[data-theme="light"] {
-    --bg-deep: #f8fafc;
-    --bg-charcoal: #ffffff;
-    --bg-graphite: #f1f5f9;
-    --bg-card: #ffffff;
-    --border-color: rgba(0, 0, 0, 0.1);
-    --border-hover: rgba(0, 0, 0, 0.3);
-
-    --text-main: #0f172a;
-    --text-muted: #475569;
-    --text-dim: #64748b;
-
-    --accent-glow: rgba(0, 0, 0, 0.08);
 }
 
 html {
@@ -83,7 +238,7 @@ body {
 .spacecraft-cursor svg {
     width: 22px;
     height: 22px;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+    filter: drop-shadow(0 0 8px var(--cursor-shadow));
     transition: transform 0.2s ease;
 }
 
@@ -95,7 +250,7 @@ body {
     position: absolute;
     width: 6px;
     height: 6px;
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--cursor-trail-bg);
     border-radius: 50%;
     top: 22px;
     left: 10px;
@@ -110,18 +265,16 @@ body {
 }
 
 ul { list-style: none; }
-a { text-decoration: none; color: inherit; transition: var(--transition); }
+a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
 img { max-width: 100%; height: auto; }
 
 .container {
-    max-width: var(--container-width);
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0 2.5rem;
 }
 
-/* =========================================
-   BUTTONS
-   ========================================= */
+/* BUTTONS */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -135,8 +288,8 @@ img { max-width: 100%; height: auto; }
     padding: 1rem 2.25rem;
     border-radius: 50px;
     cursor: pointer;
-    transition: var(--transition);
-    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
     background: transparent;
     color: var(--text-main);
     position: relative;
@@ -145,30 +298,26 @@ img { max-width: 100%; height: auto; }
 }
 
 .btn-primary {
-    background-color: #ffffff;
-    color: #050505;
-    border-color: #ffffff;
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
 }
 
 .btn-primary:hover {
-    background-color: #e4e4e7;
-    border-color: #e4e4e7;
+    background-color: var(--btn-primary-hover-bg);
+    color: var(--btn-primary-hover-text);
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
 }
 
 .btn-secondary {
-    background-color: rgba(255, 255, 255, 0.03);
-    color: #ffffff;
-    border-color: var(--border-color);
-    backdrop-filter: blur(10px);
+    background-color: var(--btn-secondary-bg);
+    color: var(--btn-secondary-text);
+    border-color: var(--btn-secondary-border);
 }
 
 .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.4);
+    background-color: var(--btn-secondary-hover-bg);
+    border-color: var(--btn-secondary-hover-border);
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .btn-sm {
@@ -180,30 +329,28 @@ img { max-width: 100%; height: auto; }
     width: 100%;
 }
 
-/* =========================================
-   NAVIGATION & LOGO
-   ========================================= */
+/* HEADER & NAVIGATION */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: var(--header-height);
-    background-color: rgba(5, 5, 5, 0.8);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    height: 90px;
+    background-color: transparent;
     z-index: 1000;
-    border-bottom: 1px solid var(--border-color);
-    transition: var(--transition);
+    border-bottom: 1px solid transparent;
+    transition: all 0.4s ease;
 }
 
 .header.scrolled {
-    background-color: rgba(5, 5, 5, 0.95);
-    border-bottom-color: rgba(255, 255, 255, 0.15);
+    background-color: var(--bg-header-scrolled);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom-color: var(--border-color);
 }
 
 .nav-container {
-    max-width: var(--container-width);
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0 2.5rem;
     height: 100%;
@@ -218,7 +365,6 @@ img { max-width: 100%; height: auto; }
     gap: 0.85rem;
 }
 
-/* Black Hole Symbol Logo */
 .logo-black-hole {
     width: 36px;
     height: 36px;
@@ -231,9 +377,9 @@ img { max-width: 100%; height: auto; }
 .bh-core {
     width: 12px;
     height: 12px;
-    background-color: #000000;
+    background-color: var(--logo-core-bg);
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), inset 0 0 3px rgba(255, 255, 255, 0.9);
+    box-shadow: var(--logo-core-shadow);
     z-index: 2;
 }
 
@@ -241,11 +387,10 @@ img { max-width: 100%; height: auto; }
     position: absolute;
     width: 32px;
     height: 32px;
-    border: 1.5px solid rgba(255, 255, 255, 0.6);
-    border-top: 1.5px solid #ffffff;
+    border: 1.5px solid var(--logo-ring-border);
+    border-top: 1.5px solid var(--logo-ring-top);
     border-radius: 50%;
     animation: rotateRing 6s linear infinite;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
 
 @keyframes rotateRing {
@@ -264,7 +409,7 @@ img { max-width: 100%; height: auto; }
     font-size: 1.15rem;
     font-weight: 800;
     letter-spacing: 0.2em;
-    color: #ffffff;
+    color: var(--logo-title);
     line-height: 1.1;
 }
 
@@ -273,7 +418,7 @@ img { max-width: 100%; height: auto; }
     font-size: 0.55rem;
     font-weight: 600;
     letter-spacing: 0.35em;
-    color: var(--text-dim);
+    color: var(--logo-subtitle);
 }
 
 .nav-menu {
@@ -288,12 +433,12 @@ img { max-width: 100%; height: auto; }
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--text-muted);
+    color: var(--nav-link-color);
     position: relative;
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #ffffff;
+    color: var(--nav-link-hover);
 }
 
 .nav-link::after {
@@ -303,8 +448,8 @@ img { max-width: 100%; height: auto; }
     left: 0;
     width: 0;
     height: 1px;
-    background-color: #ffffff;
-    transition: var(--transition);
+    background-color: var(--heading-color);
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover::after, .nav-link.active::after {
@@ -317,6 +462,36 @@ img { max-width: 100%; height: auto; }
     display: flex;
     align-items: center;
     gap: 1.25rem;
+}
+
+.icon-toggle-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--btn-secondary-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icon-toggle-btn:hover {
+    background: var(--btn-secondary-hover-bg);
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+}
+
+.icon-toggle-btn .moon-icon { display: none; }
+body[data-theme="light"] .sun-icon { display: none; }
+body[data-theme="light"] .moon-icon { display: block; }
+
+.icon-toggle-btn.active {
+    background: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    border-color: var(--btn-primary-bg);
 }
 
 .hamburger {
@@ -335,20 +510,18 @@ img { max-width: 100%; height: auto; }
 .hamburger span {
     width: 100%;
     height: 1.5px;
-    background-color: #ffffff;
-    transition: var(--transition);
+    background-color: var(--text-main);
+    transition: all 0.3s ease;
 }
 
-/* =========================================
-   HERO SECTION — CINEMATIC BLACK HOLE
-   ========================================= */
+/* HERO SECTION */
 .hero {
     position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: var(--header-height);
+    padding-top: 90px;
     overflow: hidden;
 }
 
@@ -357,14 +530,10 @@ img { max-width: 100%; height: auto; }
     inset: 0;
     background-size: cover;
     background-position: center;
-    filter: grayscale(100%) contrast(140%) brightness(35%);
+    filter: var(--hero-filter);
     transform: scale(1.05);
     animation: cinematicZoom 20s ease-in-out infinite alternate;
     z-index: 1;
-}
-
-body[data-theme="light"] .hero-cinematic-bg {
-    filter: grayscale(0%) contrast(110%) brightness(95%);
 }
 
 @keyframes cinematicZoom {
@@ -375,15 +544,10 @@ body[data-theme="light"] .hero-cinematic-bg {
 .hero-bg-overlay {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at center, rgba(5,5,5,0.4) 0%, rgba(5,5,5,0.95) 85%);
+    background: var(--hero-overlay);
     z-index: 2;
 }
 
-body[data-theme="light"] .hero-bg-overlay {
-    background: radial-gradient(circle at center, rgba(248,250,252,0.6) 0%, rgba(248,250,252,0.95) 85%);
-}
-
-/* Particle Stars */
 .stars-container {
     position: absolute;
     inset: 0;
@@ -393,7 +557,7 @@ body[data-theme="light"] .hero-bg-overlay {
 
 .star {
     position: absolute;
-    background: #ffffff;
+    background: var(--text-main);
     border-radius: 50%;
     animation: twinkle 4s ease-in-out infinite;
 }
@@ -430,7 +594,7 @@ body[data-theme="light"] .hero-bg-overlay {
 .badge-line {
     width: 30px;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--border-color);
 }
 
 .hero-title {
@@ -440,8 +604,7 @@ body[data-theme="light"] .hero-bg-overlay {
     letter-spacing: -0.02em;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    color: #ffffff;
-    text-shadow: 0 10px 40px rgba(0,0,0,0.8);
+    color: var(--heading-color);
 }
 
 .hero-subtitle {
@@ -478,7 +641,7 @@ body[data-theme="light"] .hero-bg-overlay {
 .scroll-line {
     width: 1px;
     height: 40px;
-    background: linear-gradient(to bottom, #ffffff, transparent);
+    background: linear-gradient(to bottom, var(--text-main), transparent);
     animation: scrollPulse 2s ease-in-out infinite;
 }
 
@@ -488,9 +651,7 @@ body[data-theme="light"] .hero-bg-overlay {
     100% { transform: translateY(0); opacity: 0.2; }
 }
 
-/* =========================================
-   SECTIONS GENERAL
-   ========================================= */
+/* SECTIONS GENERAL */
 .section {
     padding: 8rem 0;
     position: relative;
@@ -525,7 +686,7 @@ body[data-theme="light"] .hero-bg-overlay {
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1.15;
-    color: #ffffff;
+    color: var(--heading-color);
 }
 
 .section-desc {
@@ -534,9 +695,7 @@ body[data-theme="light"] .hero-bg-overlay {
     margin-top: 1rem;
 }
 
-/* =========================================
-   ABOUT SECTION
-   ========================================= */
+/* ABOUT SECTION */
 .about-grid {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -554,7 +713,7 @@ body[data-theme="light"] .hero-bg-overlay {
 .about-lead {
     font-size: 1.35rem !important;
     font-weight: 500;
-    color: #ffffff !important;
+    color: var(--heading-color) !important;
     letter-spacing: -0.01em;
 }
 
@@ -583,14 +742,14 @@ body[data-theme="light"] .hero-bg-overlay {
     font-family: var(--font-heading);
     font-size: 1.1rem;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--heading-color);
     margin-bottom: 0.35rem;
 }
 
 .pillar-item p {
     font-size: 0.95rem !important;
     margin-bottom: 0 !important;
-    color: var(--text-dim) !important;
+    color: var(--text-muted) !important;
 }
 
 .about-stats-card {
@@ -598,7 +757,7 @@ body[data-theme="light"] .hero-bg-overlay {
     border: 1px solid var(--border-color);
     border-radius: 20px;
     padding: 3rem;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    box-shadow: var(--shadow-card);
     position: relative;
     overflow: hidden;
 }
@@ -623,17 +782,17 @@ body[data-theme="light"] .hero-bg-overlay {
 .bh-core-mini {
     width: 16px;
     height: 16px;
-    background: #000;
+    background: var(--logo-core-bg);
     border-radius: 50%;
-    box-shadow: 0 0 12px rgba(255,255,255,0.9);
+    box-shadow: var(--logo-core-shadow);
 }
 
 .bh-ring-mini {
     position: absolute;
     width: 42px;
     height: 42px;
-    border: 1px solid rgba(255,255,255,0.5);
-    border-top: 1px solid #fff;
+    border: 1px solid var(--logo-ring-border);
+    border-top: 1px solid var(--logo-ring-top);
     border-radius: 50%;
     animation: rotateRing 6s linear infinite;
 }
@@ -643,6 +802,7 @@ body[data-theme="light"] .hero-bg-overlay {
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 0.15em;
+    color: var(--heading-color);
     margin-bottom: 0.25rem;
 }
 
@@ -668,7 +828,7 @@ body[data-theme="light"] .hero-bg-overlay {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--heading-color);
 }
 
 .m-lbl {
@@ -684,7 +844,7 @@ body[data-theme="light"] .hero-bg-overlay {
     gap: 0.75rem;
     font-size: 0.85rem;
     color: var(--text-muted);
-    background: rgba(255,255,255,0.02);
+    background: var(--btn-secondary-bg);
     border: 1px solid var(--border-color);
     padding: 0.85rem;
     border-radius: 10px;
@@ -693,9 +853,9 @@ body[data-theme="light"] .hero-bg-overlay {
 .status-dot {
     width: 8px;
     height: 8px;
-    background-color: #ffffff;
+    background-color: var(--heading-color);
     border-radius: 50%;
-    box-shadow: 0 0 10px #ffffff;
+    box-shadow: 0 0 10px var(--heading-color);
     animation: pulse-dot 2s infinite;
 }
 
@@ -705,9 +865,7 @@ body[data-theme="light"] .hero-bg-overlay {
     100% { transform: scale(0.95); opacity: 0.8; }
 }
 
-/* =========================================
-   SERVICES SECTION
-   ========================================= */
+/* SERVICES SECTION */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -719,7 +877,7 @@ body[data-theme="light"] .hero-bg-overlay {
     border: 1px solid var(--border-color);
     border-radius: 16px;
     padding: 3rem 2.5rem;
-    transition: var(--transition);
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -729,8 +887,8 @@ body[data-theme="light"] .hero-bg-overlay {
 .service-card:hover {
     border-color: var(--border-hover);
     transform: translateY(-6px);
-    background-color: #121215;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    background-color: var(--bg-card-hover);
+    box-shadow: var(--shadow-card);
 }
 
 .service-index {
@@ -747,7 +905,7 @@ body[data-theme="light"] .hero-bg-overlay {
     font-family: var(--font-heading);
     font-size: 1.35rem;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--heading-color);
     margin-bottom: 1rem;
     letter-spacing: -0.01em;
 }
@@ -770,9 +928,7 @@ body[data-theme="light"] .hero-bg-overlay {
     color: var(--text-dim);
 }
 
-/* =========================================
-   SELECTED PROJECTS SECTION
-   ========================================= */
+/* SELECTED PROJECTS SECTION */
 .projects-list {
     display: flex;
     flex-direction: column;
@@ -788,12 +944,12 @@ body[data-theme="light"] .hero-bg-overlay {
     border: 1px solid var(--border-color);
     border-radius: 24px;
     padding: 3.5rem;
-    transition: var(--transition);
+    transition: all 0.3s ease;
 }
 
 .project-item:hover {
     border-color: var(--border-hover);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.7);
+    box-shadow: var(--shadow-card-hover);
 }
 
 .project-num {
@@ -810,7 +966,7 @@ body[data-theme="light"] .hero-bg-overlay {
     font-family: var(--font-heading);
     font-size: clamp(1.75rem, 2.5vw, 2.25rem);
     font-weight: 700;
-    color: #ffffff;
+    color: var(--heading-color);
     margin-bottom: 1.25rem;
     letter-spacing: -0.02em;
 }
@@ -834,7 +990,7 @@ body[data-theme="light"] .hero-bg-overlay {
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.05em;
-    background-color: rgba(255, 255, 255, 0.04);
+    background-color: var(--bg-graphite);
     color: var(--text-muted);
     padding: 0.4rem 0.9rem;
     border-radius: 6px;
@@ -848,30 +1004,30 @@ body[data-theme="light"] .hero-bg-overlay {
 }
 
 .project-preview-frame {
-    background: #0a0a0c;
+    background: var(--bg-graphite);
     border: 1px solid var(--border-color);
     border-radius: 16px;
     height: 320px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    transition: var(--transition);
+    transition: all 0.3s ease;
 }
 
 .project-item:hover .project-preview-frame {
-    border-color: rgba(255,255,255,0.3);
+    border-color: var(--border-hover);
 }
 
 .garden-preview {
-    background: radial-gradient(circle at center, #11261d 0%, #050a08 100%);
+    background: radial-gradient(circle at center, rgba(17, 38, 29, 0.4) 0%, rgba(5, 10, 8, 0.95) 100%);
 }
 
 .pharma-preview {
-    background: radial-gradient(circle at center, #12222d 0%, #05080b 100%);
+    background: radial-gradient(circle at center, rgba(18, 34, 45, 0.4) 0%, rgba(5, 8, 11, 0.95) 100%);
 }
 
 .preview-header-bar {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.2);
     padding: 0.75rem 1.25rem;
     display: flex;
     align-items: center;
@@ -882,7 +1038,7 @@ body[data-theme="light"] .hero-bg-overlay {
 .p-dot {
     width: 8px;
     height: 8px;
-    background-color: #333333;
+    background-color: var(--text-dim);
     border-radius: 50%;
 }
 
@@ -909,25 +1065,23 @@ body[data-theme="light"] .hero-bg-overlay {
     font-weight: 600;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.6);
-    background: rgba(255,255,255,0.05);
+    color: var(--text-muted);
+    background: var(--btn-secondary-bg);
     padding: 0.35rem 0.85rem;
     border-radius: 4px;
     margin-bottom: 1rem;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid var(--border-color);
 }
 
 .preview-hero-content h4 {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--heading-color);
     letter-spacing: -0.01em;
 }
 
-/* =========================================
-   OUR APPROACH SECTION
-   ========================================= */
+/* OUR APPROACH SECTION */
 .approach-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -939,20 +1093,21 @@ body[data-theme="light"] .hero-bg-overlay {
     border: 1px solid var(--border-color);
     border-radius: 16px;
     padding: 3rem 2rem;
-    transition: var(--transition);
+    transition: all 0.3s ease;
 }
 
 .approach-step:hover {
     border-color: var(--border-hover);
     transform: translateY(-5px);
-    background-color: #121215;
+    background-color: var(--bg-card-hover);
 }
 
 .step-num {
     font-family: var(--font-heading);
     font-size: 2rem;
     font-weight: 800;
-    color: rgba(255,255,255,0.15);
+    color: var(--text-dim);
+    opacity: 0.4;
     margin-bottom: 1.5rem;
     display: block;
     letter-spacing: -0.02em;
@@ -962,7 +1117,7 @@ body[data-theme="light"] .hero-bg-overlay {
     font-family: var(--font-heading);
     font-size: 1.25rem;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--heading-color);
     margin-bottom: 0.75rem;
     letter-spacing: 0.05em;
 }
@@ -973,9 +1128,7 @@ body[data-theme="light"] .hero-bg-overlay {
     line-height: 1.6;
 }
 
-/* =========================================
-   CONTACT SECTION
-   ========================================= */
+/* CONTACT SECTION */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1.25fr;
@@ -987,7 +1140,7 @@ body[data-theme="light"] .hero-bg-overlay {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--heading-color);
     margin-bottom: 1rem;
 }
 
@@ -1012,25 +1165,25 @@ body[data-theme="light"] .hero-bg-overlay {
     border: 1px solid var(--border-color);
     padding: 1.25rem 1.5rem;
     border-radius: 14px;
-    transition: var(--transition);
+    transition: all 0.3s ease;
 }
 
 .contact-link-row:hover {
-    border-color: rgba(255,255,255,0.3);
-    background-color: #141418;
+    border-color: var(--border-hover);
+    background-color: var(--bg-card-hover);
     transform: translateX(5px);
 }
 
 .c-icon {
     width: 44px;
     height: 44px;
-    background-color: rgba(255,255,255,0.03);
+    background-color: var(--btn-secondary-bg);
     border: 1px solid var(--border-color);
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    color: var(--heading-color);
     flex-shrink: 0;
 }
 
@@ -1048,7 +1201,7 @@ body[data-theme="light"] .hero-bg-overlay {
 .cval {
     font-size: 1rem;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--heading-color);
 }
 
 .contact-form-card {
@@ -1056,7 +1209,7 @@ body[data-theme="light"] .hero-bg-overlay {
     border: 1px solid var(--border-color);
     border-radius: 20px;
     padding: 3rem;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+    box-shadow: var(--shadow-card);
 }
 
 .contact-form {
@@ -1086,25 +1239,30 @@ body[data-theme="light"] .hero-bg-overlay {
     padding: 0.9rem 1.2rem;
     font-family: var(--font-sans);
     font-size: 0.95rem;
-    background-color: #070709;
-    border: 1px solid var(--border-color);
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
     border-radius: 10px;
-    color: #ffffff;
-    transition: var(--transition);
+    color: var(--input-text);
+    transition: all 0.3s ease;
+}
+
+.form-group select option {
+    background-color: var(--bg-card);
+    color: var(--text-main);
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05);
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 0 3px var(--border-subtle);
 }
 
 .form-feedback {
     margin-top: 1rem;
     padding: 1.25rem;
-    background-color: rgba(255,255,255,0.03);
+    background-color: var(--btn-secondary-bg);
     border: 1px solid var(--border-color);
     border-radius: 10px;
     font-size: 0.9rem;
@@ -1112,19 +1270,17 @@ body[data-theme="light"] .hero-bg-overlay {
 }
 
 .form-feedback a {
-    color: #ffffff;
+    color: var(--heading-color);
     font-weight: 600;
     text-decoration: underline;
 }
 
 .hidden { display: none; }
 
-/* =========================================
-   FOOTER
-   ========================================= */
+/* FOOTER */
 .footer {
-    background-color: #020203;
-    color: #ffffff;
+    background-color: var(--footer-bg);
+    color: var(--text-main);
     padding: 6rem 0 2.5rem;
     border-top: 1px solid var(--border-color);
 }
@@ -1153,7 +1309,7 @@ body[data-theme="light"] .hero-bg-overlay {
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--heading-color);
     margin-bottom: 1.5rem;
 }
 
@@ -1172,7 +1328,7 @@ body[data-theme="light"] .hero-bg-overlay {
 
 .footer-links-col a:hover,
 .footer-connect-col a:hover {
-    color: #ffffff;
+    color: var(--heading-color);
 }
 
 .footer-bottom {
@@ -1188,56 +1344,25 @@ body[data-theme="light"] .hero-bg-overlay {
     letter-spacing: 0.05em;
 }
 
-/* =========================================
-   ACCESSIBILITY
-   ========================================= */
-
-.icon-toggle-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--border-color);
-    color: var(--text-main);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.icon-toggle-btn:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: var(--border-hover);
-    transform: translateY(-2px);
-}
-
-body[data-theme="light"] .icon-toggle-btn {
-    background: rgba(0, 0, 0, 0.05);
-}
-
-body[data-theme="light"] .icon-toggle-btn:hover {
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.icon-toggle-btn .moon-icon { display: none; }
-body[data-theme="light"] .sun-icon { display: none; }
-body[data-theme="light"] .moon-icon { display: block; }
-
-.icon-toggle-btn.active { color: #f59e0b; }
-
-body[data-reduce-motion="true"] .hero-cinematic-bg,
-body[data-reduce-motion="true"] .star,
-body[data-reduce-motion="true"] .bh-ring,
-body[data-reduce-motion="true"] .bh-ring-mini,
-body[data-reduce-motion="true"] .scroll-line,
-body[data-reduce-motion="true"] .status-dot {
+/* REDUCE MOTION */
+[data-reduce-motion="true"] .hero-cinematic-bg,
+[data-reduce-motion="true"] .star,
+[data-reduce-motion="true"] .bh-ring,
+[data-reduce-motion="true"] .bh-ring-mini,
+[data-reduce-motion="true"] .scroll-line,
+[data-reduce-motion="true"] .status-dot {
     animation: none !important;
+    transition: none !important;
 }
 
-/* =========================================
-   RESPONSIVE DESIGN
-   ========================================= */
+@media (prefers-reduced-motion: reduce) {
+    .hero-cinematic-bg, .star, .bh-ring, .bh-ring-mini, .scroll-line, .status-dot {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
     .about-grid,
     .project-item,
@@ -1255,18 +1380,18 @@ body[data-reduce-motion="true"] .status-dot {
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
-        top: var(--header-height);
+        top: 90px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - var(--header-height));
+        height: calc(100vh - 90px);
         background-color: var(--bg-deep);
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2rem;
-        transition: var(--transition);
+        transition: all 0.3s ease;
         border-bottom: 1px solid var(--border-color);
-        box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     }
 
     .nav-menu.active {
@@ -1286,7 +1411,7 @@ body[data-reduce-motion="true"] .status-dot {
     }
 
     .hamburger.active span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(9px) rotate(45deg);
     }
 
     .hamburger.active span:nth-child(2) {
@@ -1294,7 +1419,7 @@ body[data-reduce-motion="true"] .status-dot {
     }
 
     .hamburger.active span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-9px) rotate(-45deg);
     }
 
     .container {
@@ -1308,95 +1433,427 @@ body[data-reduce-motion="true"] .status-dot {
     .project-item {
         padding: 1.75rem;
     }
-}
-/* MOBILE HERO — PORTRAIT OPTIMIZATION */
-@media (max-width: 768px) {
-
-    .hero {
-        min-height: 100svh;
-        padding-top: var(--header-height);
-        background: #050505;
-    }
-
-  .hero-cinematic-bg {
-    background-size: cover;
-    background-position: 65% center;
-    background-repeat: no-repeat;
-    filter: grayscale(100%) contrast(140%) brightness(45%);
-    transform: scale(1.08);
-    animation: none;
-}
-    .hero-bg-overlay {
-        background: linear-gradient(
-            to bottom,
-            rgba(5,5,5,0.12) 0%,
-            rgba(5,5,5,0.25) 45%,
-            rgba(5,5,5,0.85) 100%
-        );
-    }
-
- 
-/* MOBILE HERO — FINAL CLEAN VERSION */
-@media (max-width: 768px) {
-
-    .hero {
-        min-height: 100svh;
-        box-sizing: border-box;
-        padding-top: var(--header-height);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
 
     .hero-cinematic-bg {
         background-size: cover;
         background-position: 80% center;
-        background-repeat: no-repeat;
-        filter: grayscale(100%) contrast(140%) brightness(50%);
-        transform: scale(1.08);
-        animation: none;
-    }
-
-    .hero-bg-overlay {
-        background: linear-gradient(
-            to bottom,
-            rgba(5,5,5,0.15) 0%,
-            rgba(5,5,5,0.25) 55%,
-            rgba(5,5,5,0.65) 100%
-        );
     }
 
     .hero-container {
-        width: 100%;
-        max-width: 100%;
         padding: 1rem 1rem 3rem;
-        margin: 0 auto;
-    }
-
-    .hero-badge {
-        margin-bottom: 1.5rem;
     }
 
     .hero-title {
         font-size: clamp(2.1rem, 8vw, 2.8rem);
-        line-height: 1.08;
-        letter-spacing: -0.03em;
-        margin-bottom: 1.2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 2rem;
-    }
-
-    .hero-buttons {
-        gap: 1rem;
-    }
-
-    .scroll-indicator {
-        bottom: 0.8rem;
     }
 }
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .contact-form-card,
+    .about-stats-card {
+        padding: 1.75rem;
+    }
+
+    .studio-metrics {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+}
+/* =========================================
+   FORCE COLORFUL HERO IMAGE IN LIGHT MODE
+   ========================================= */
+
+/* 1. Remove ALL grayscale and brightness filters in Light Mode */
+[data-theme="light"] .hero-cinematic-bg,
+html[data-theme="light"] .hero-cinematic-bg,
+body[data-theme="light"] .hero-cinematic-bg {
+    filter: none !important;
+    -webkit-filter: none !important;
+    opacity: 1 !important;
+}
+
+/* 2. Remove any white/gray overlays that are washing out the image */
+[data-theme="light"] .hero-bg-overlay,
+html[data-theme="light"] .hero-bg-overlay,
+body[data-theme="light"] .hero-bg-overlay {
+    background: transparent !important;
+    background-image: none !important;
+    opacity: 0 !important;
+}
+
+/* 3. Make sure the hero section itself doesn't have a white background hiding the image */
+[data-theme="light"] .hero,
+html[data-theme="light"] .hero {
+    background-color: transparent !important;
+}
+
+/* 4. Keep the text white and readable against the dark space background */
+[data-theme="light"] .hero-title,
+[data-theme="light"] .hero-subtitle,
+[data-theme="light"] .hero-badge span,
+[data-theme="light"] .scroll-indicator {
+    color: #ffffff !important;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8) !important;
+}
+/* =========================================
+   THE REAL FINAL FIX FOR LOGO ICON
+   ========================================= */
+
+/* 1. TOP OF PAGE: Force the logo icon to be white */
+[data-theme="light"] header .logo svg,
+[data-theme="light"] header .logo svg *,
+[data-theme="light"] header .logo svg circle,
+[data-theme="light"] header .logo svg path {
+    stroke: #ffffff !important;
+    fill: transparent !important; /* Leaves the center dark */
+}
+
+/* Make sure the text is white */
+[data-theme="light"] header .logo,
+[data-theme="light"] header .logo * {
+    color: #ffffff !important;
+}
+
+/* 2. SCROLLED DOWN: Force the logo icon to be dark */
+[data-theme="light"] header.scrolled .logo svg,
+[data-theme="light"] header.scrolled .logo svg *,
+[data-theme="light"] header.scrolled .logo svg circle,
+[data-theme="light"] header.scrolled .logo svg path {
+    stroke: #2c1e16 !important;
+}
+
+/* Make sure the text is dark */
+[data-theme="light"] header.scrolled .logo,
+[data-theme="light"] header.scrolled .logo * {
+    color: #2c1e16 !important;
+}
+/* =========================================
+   THE ACTUAL LOGO FIX (DIV-BASED)
+   ========================================= */
+
+/* 1. TOP OF PAGE: Make the ring white */
+[data-theme="light"] header .logo-black-hole .bh-ring {
+    border-color: #ffffff !important;
+}
+
+/* Make the core (the center dot) white too, so it matches dark mode */
+[data-theme="light"] header .logo-black-hole .bh-core {
+    background-color: #ffffff !important;
+}
+
+/* Make the text white */
+[data-theme="light"] header .brand-logo {
+    color: #ffffff !important;
+}
+
+/* 2. SCROLLED DOWN: Make the ring and core dark */
+[data-theme="light"] header.scrolled .logo-black-hole .bh-ring {
+    border-color: #2c1e16 !important;
+}
+
+[data-theme="light"] header.scrolled .logo-black-hole .bh-core {
+    background-color: #2c1e16 !important;
+}
+
+[data-theme="light"] header.scrolled .brand-logo {
+    color: #2c1e16 !important;
+}
+/* =========================================
+   LIGHT MODE FIX: LOGO, HEADER, BUTTONS, CURSOR
+   (paste at the very bottom of style.css)
+   ========================================= */
+
+/* ---------- 1. HEADER AT THE TOP (over the dark hero image) ---------- */
+
+/* Logo: exactly the same as dark mode */
+body[data-theme="light"] .header:not(.scrolled) .logo-black-hole .bh-core {
+    background-color: #000000 !important;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9), inset 0 0 3px rgba(255, 255, 255, 0.9) !important;
+}
+body[data-theme="light"] .header:not(.scrolled) .logo-black-hole .bh-ring {
+    border: 1.5px solid rgba(255, 255, 255, 0.6) !important;
+    border-top: 1.5px solid #ffffff !important;
+}
+body[data-theme="light"] .header:not(.scrolled) .logo-title {
+    color: #ffffff !important;
+}
+body[data-theme="light"] .header:not(.scrolled) .logo-subtitle {
+    color: #a1a1aa !important;
+}
+
+/* Menu links */
+body[data-theme="light"] .header:not(.scrolled) .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+body[data-theme="light"] .header:not(.scrolled) .nav-link:hover,
+body[data-theme="light"] .header:not(.scrolled) .nav-link.active {
+    color: #ffffff !important;
+}
+body[data-theme="light"] .header:not(.scrolled) .nav-link::after {
+    background-color: #ffffff !important;
+}
+
+/* Theme / reduce-animation icons and the "Start a Project" button */
+body[data-theme="light"] .header:not(.scrolled) .icon-toggle-btn:not(.active) {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: rgba(255, 255, 255, 0.35) !important;
+}
+body[data-theme="light"] .header:not(.scrolled) .icon-toggle-btn:not(.active):hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+}
+body[data-theme="light"] .header:not(.scrolled) .nav-actions .btn-secondary {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: rgba(255, 255, 255, 0.55) !important;
+}
+body[data-theme="light"] .header:not(.scrolled) .nav-actions .btn-secondary:hover {
+    background: #ffffff !important;
+    color: #0f172a !important;
+}
+body[data-theme="light"] .header:not(.scrolled) .hamburger span {
+    background-color: #ffffff !important;
+}
+
+/* ---------- 2. HEADER WHEN SCROLLED (light frosted bar): dark logo ---------- */
+body[data-theme="light"] .header.scrolled .logo-black-hole .bh-core {
+    background-color: var(--logo-core-bg) !important;
+    box-shadow: var(--logo-core-shadow) !important;
+}
+body[data-theme="light"] .header.scrolled .logo-black-hole .bh-ring {
+    border: 1.5px solid var(--logo-ring-border) !important;
+    border-top: 1.5px solid var(--logo-ring-top) !important;
+}
+body[data-theme="light"] .header.scrolled .logo-title {
+    color: var(--logo-title) !important;
+}
+body[data-theme="light"] .header.scrolled .logo-subtitle {
+    color: var(--logo-subtitle) !important;
+}
+body[data-theme="light"] .header.scrolled .nav-link {
+    color: #1e293b !important;
+}
+body[data-theme="light"] .header.scrolled .nav-link:hover,
+body[data-theme="light"] .header.scrolled .nav-link.active {
+    color: #d97706 !important;
+}
+
+/* ---------- 3. HERO BUTTONS (light mode) ---------- */
+body[data-theme="light"] .hero .btn-primary {
+    background-color: #ffffff !important;
+    color: #050505 !important;
+    border-color: #ffffff !important;
+}
+body[data-theme="light"] .hero .btn-primary:hover {
+    background-color: #e4e4e7 !important;
+}
+body[data-theme="light"] .hero .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.6) !important;
+}
+body[data-theme="light"] .hero .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Soft dark fade at the top and bottom of the hero so white text always reads
+   (the image stays colorful in the middle) */
+body[data-theme="light"] .hero .hero-bg-overlay {
+    opacity: 1 !important;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(0, 0, 0, 0) 28%,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.35) 100%
+    ) !important;
+}
+
+/* ---------- 4. ORANGE CURSOR IN LIGHT MODE (visible on dark and light areas) ---------- */
+body[data-theme="light"] .spacecraft-cursor {
+    --cursor-fill: #d97706;
+    --cursor-stroke: #92400e;
+    --cursor-trail-bg: rgba(217, 119, 6, 0.85);
+    --cursor-shadow: rgba(217, 119, 6, 0.6);
+}
+
+/* ---------- 5. MOBILE: the menu panel is light, so its links must be dark ---------- */
+@media (max-width: 768px) {
+    body[data-theme="light"] .header:not(.scrolled) .nav-menu .nav-link {
+        color: var(--text-main) !important;
+    }
+    body[data-theme="light"] .header:not(.scrolled) .nav-menu .nav-link::after {
+        background-color: var(--heading-color) !important;
+    }
+}
+/* =========================================
+   WARM LIGHT THEME + READABLE HERO + ADAPTIVE CURSOR + NO ORANGE RINGS
+   (paste at the very bottom of style.css)
+   ========================================= */
+
+/* ---------- 1. SOFT WARM LIGHT MODE COLORS ---------- */
+:root[data-theme="light"],
+body[data-theme="light"] {
+    --bg-deep: #f1e9dc;
+    --bg-charcoal: #f7f1e7;
+    --bg-graphite: #e9dfcf;
+    --bg-card: #f8f2e8;
+    --bg-card-hover: #f1e8da;
+    --bg-header: rgba(241, 233, 220, 0.6);
+    --bg-header-scrolled: rgba(241, 233, 220, 0.92);
+
+    --border-color: rgba(70, 48, 28, 0.14);
+    --border-hover: rgba(70, 48, 28, 0.32);
+    --border-subtle: rgba(70, 48, 28, 0.06);
+
+    --text-main: #2a1d14;
+    --text-muted: #55402f;
+    --text-dim: #6e5845;
+    --heading-color: #2a1d14;
+
+    --btn-primary-bg: #2a1d14;
+    --btn-primary-text: #f8f2e8;
+    --btn-primary-hover-bg: #43301f;
+    --btn-primary-hover-text: #f8f2e8;
+
+    --btn-secondary-bg: rgba(70, 48, 28, 0.05);
+    --btn-secondary-text: #2a1d14;
+    --btn-secondary-border: rgba(70, 48, 28, 0.35);
+    --btn-secondary-hover-bg: rgba(70, 48, 28, 0.12);
+    --btn-secondary-hover-border: rgba(70, 48, 28, 0.55);
+
+    --logo-core-bg: #2a1d14;
+    --logo-core-shadow: 0 0 10px rgba(42, 29, 20, 0.35), inset 0 0 3px rgba(255, 255, 255, 0.8);
+    --logo-ring-border: rgba(42, 29, 20, 0.3);
+    --logo-ring-top: #2a1d14;
+    --logo-title: #2a1d14;
+    --logo-subtitle: #6e5845;
+
+    --input-bg: #fbf7f0;
+    --input-text: #2a1d14;
+    --input-border: rgba(70, 48, 28, 0.2);
+    --input-focus-border: rgba(70, 48, 28, 0.5);
+
+    --nav-link-color: #55402f;
+    --nav-link-hover: #2a1d14;
+    --nav-link-scrolled: #2a1d14;
+
+    --footer-bg: #e6dccb;
+
+    --shadow-card: 0 10px 30px rgba(70, 48, 28, 0.08);
+    --shadow-card-hover: 0 20px 40px rgba(70, 48, 28, 0.14);
+}
+
+/* ---------- 2. HERO TEXT: CLEARLY READABLE OVER THE IMAGE ---------- */
+body[data-theme="light"] .hero .hero-bg-overlay {
+    opacity: 1 !important;
+    background:
+        radial-gradient(ellipse 60% 45% at 50% 55%, rgba(0, 0, 0, 0.4), transparent 100%),
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.55) 0%,
+            rgba(0, 0, 0, 0.1) 28%,
+            rgba(0, 0, 0, 0.1) 60%,
+            rgba(0, 0, 0, 0.45) 100%) !important;
+}
+body[data-theme="light"] .hero .hero-subtitle {
+    color: #ffffff !important;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.95),
+                 0 2px 14px rgba(0, 0, 0, 0.9),
+                 0 0 32px rgba(0, 0, 0, 0.7) !important;
+}
+body[data-theme="light"] .hero .hero-title {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6),
+                 0 4px 30px rgba(0, 0, 0, 0.85) !important;
+}
+body[data-theme="light"] .hero .hero-badge,
+body[data-theme="light"] .hero .hero-badge span,
+body[data-theme="light"] .hero .scroll-indicator {
+    color: #ffffff !important;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9) !important;
+}
+
+/* ---------- 3. SCROLLED HEADER: WARM, NO ORANGE ---------- */
+body[data-theme="light"] .header.scrolled {
+    background: rgba(241, 233, 220, 0.92) !important;
+    border-bottom: 1px solid rgba(70, 48, 28, 0.14) !important;
+}
+body[data-theme="light"] .header.scrolled .nav-link {
+    color: #2a1d14 !important;
+}
+body[data-theme="light"] .header.scrolled .nav-link:hover,
+body[data-theme="light"] .header.scrolled .nav-link.active {
+    color: #2a1d14 !important;
+    font-weight: 600;
+}
+body[data-theme="light"] .header.scrolled .nav-link::after {
+    background-color: #2a1d14 !important;
+}
+
+/* Start a Project button: plain warm-brown border, no orange in any state */
+body[data-theme="light"] .header.scrolled .nav-actions .btn-secondary {
+    color: #2a1d14 !important;
+    background: transparent !important;
+    border: 1px solid rgba(42, 29, 20, 0.4) !important;
+}
+body[data-theme="light"] .header.scrolled .nav-actions .btn-secondary:hover {
+    background: #2a1d14 !important;
+    color: #f8f2e8 !important;
+    border-color: #2a1d14 !important;
+}
+
+/* Theme / reduce-animation round buttons */
+body[data-theme="light"] .header.scrolled .icon-toggle-btn:not(.active) {
+    color: #2a1d14 !important;
+    background: rgba(70, 48, 28, 0.06) !important;
+    border: 1px solid rgba(42, 29, 20, 0.25) !important;
+}
+
+/* ---------- 4. REMOVE THE ORANGE FOCUS RING (browser default after a click) ---------- */
+a:focus,
+button:focus,
+.btn:focus,
+.icon-toggle-btn:focus,
+.nav-link:focus,
+.hamburger:focus {
+    outline: none !important;
+}
+/* Keyboard users still get a quiet, neutral ring */
+.btn:focus-visible,
+.icon-toggle-btn:focus-visible,
+.nav-link:focus-visible,
+.hamburger:focus-visible {
+    outline: 2px solid currentColor !important;
+    outline-offset: 3px;
+}
+
+/* ---------- 5. CURSOR: LIGHT ON DARK AREAS, DARK ON LIGHT AREAS (automatic) ---------- */
+.spacecraft-cursor {
+    mix-blend-mode: difference;
+}
+.spacecraft-cursor svg path,
+body[data-theme="light"] .spacecraft-cursor svg path,
+body[data-theme="dark"] .spacecraft-cursor svg path {
+    fill: #ffffff !important;
+    stroke: #ffffff !important;
+}
+.spacecraft-cursor svg,
+body[data-theme="light"] .spacecraft-cursor svg {
+    filter: none !important;
+}
+.cursor-trail,
+body[data-theme="light"] .cursor-trail {
+    background: #ffffff !important;
+}
+/* =========================================
+   REMOVE BLACK STARS IN LIGHT MODE (desktop + phone)
+   ========================================= */
+body[data-theme="light"] .stars-container,
+body[data-theme="light"] .star {
+    display: none !important;
 }
