@@ -1874,3 +1874,40 @@ body[data-theme="light"] .star {
         padding-bottom: 4rem !important;
     }
 }
+/* =========================================
+   FIX: SIDEWAYS OVERFLOW / ZOOM-OUT IN INSTAGRAM & MOBILE BROWSERS
+   ========================================= */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-x: clip;
+}
+
+@media (max-width: 768px) {
+    /* Header fits small phones */
+    .nav-container { padding: 0 1rem; }
+    .brand-logo { gap: 0.6rem; min-width: 0; }
+    .nav-actions { gap: 0.6rem; }
+    .logo-title { font-size: 1rem; letter-spacing: 0.14em; }
+    .logo-subtitle { letter-spacing: 0.25em; }
+    .icon-toggle-btn { width: 36px; height: 36px; }
+
+    /* Slide the mobile menu with a transform instead of left:-100% */
+    .nav-menu {
+        left: 0;
+        transform: translateX(-100%);
+        visibility: hidden;
+    }
+    .nav-menu.active {
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero-container { padding-left: 1rem; padding-right: 1rem; }
+    .hero-badge { letter-spacing: 0.15em; }
+    .hero-title { font-size: 2rem; overflow-wrap: anywhere; }
+    .btn { padding: 0.9rem 1.5rem; }
+}
