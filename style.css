@@ -1857,3 +1857,20 @@ body[data-theme="light"] .stars-container,
 body[data-theme="light"] .star {
     display: none !important;
 }
+/* =========================================
+   FIX: SCROLL INDICATOR OVERLAPPING BUTTONS ON SHORT SCREENS
+   ========================================= */
+
+/* Short screens (iPhone SE, small laptops): hide the indicator */
+@media (max-height: 800px) {
+    .scroll-indicator {
+        display: none !important;
+    }
+}
+
+/* Phones: a little extra space below the buttons so nothing feels cramped */
+@media (max-width: 768px) {
+    .hero-container {
+        padding-bottom: 4rem !important;
+    }
+}
