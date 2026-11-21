@@ -2252,7 +2252,8 @@ function HoldApprove({ theme }) {
               padding: 18,
               display: "flex",
               flexDirection: "column",
-              gap: 14,
+              gap: 16,
+                  paddingBottom: 12,
               transition: "border-color 240ms ease",
             }}
           >
@@ -2698,7 +2699,7 @@ export default function App() {
                 style={{
                   fontFamily: SANS,
                   fontWeight: 700,
-                  fontSize: "clamp(2.15rem, 4.1vw, 3.65rem)",
+                  fontSize: "clamp(2.75rem, 9vw, 3.85rem)",
                   lineHeight: 1.04,
                   letterSpacing: "-0.035em",
                   margin: 0,
@@ -2723,14 +2724,15 @@ export default function App() {
                   maxWidth: 380,
                   display: "flex",
                   flexDirection: "column",
-                  gap: 14,
+                  gap: 16,
+                  paddingBottom: 12,
                   pointerEvents: diveP > 0.25 ? "none" : "auto",
                 }}
               >
                 <p
                   style={{
                     fontFamily: SANS,
-                    fontSize: "clamp(0.84rem, 1vw, 0.98rem)",
+                    fontSize: "clamp(0.95rem, 1.15vw, 1.05rem)",
                     lineHeight: 1.48,
                     margin: 0,
                     color: "rgba(250, 250, 249, 0.86)",
@@ -2791,14 +2793,14 @@ export default function App() {
               </div>
 
               {/* BOTTOM DISPLAY HEADLINE: Left-aligned on mobile, Right-aligned on desktop */}
-              <div className="self-start md:self-end text-left md:text-right max-w-[min(620px,92vw)] pt-1 md:pt-0">
+              <div className="self-start md:self-end text-left md:text-right max-w-[min(620px,92vw)] pt-1 pb-6 md:pt-0 md:pb-0">
                 <div
                   style={{
                     fontFamily: SANS,
                     fontWeight: 700,
-                    fontSize: "clamp(2.15rem, 4.1vw, 3.65rem)",
-                    lineHeight: 1.04,
-                    letterSpacing: "-0.035em",
+                    fontSize: "clamp(1.75rem, 6vw, 3.5rem)",
+                    lineHeight: 1.08,
+                    letterSpacing: "-0.03em",
                     margin: 0,
                     color: "#FAFAF9",
                     textShadow: "0 4px 24px rgba(0,0,0,0.85)",
@@ -3046,7 +3048,8 @@ export default function App() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
-                    gap: 14,
+                    gap: 16,
+                  paddingBottom: 12,
                   }}
                 >
                   <div>
